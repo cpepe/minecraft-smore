@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "fortnitefood:marshmallow"
+        },
+        {
+            "item": "fortnitefood:marshmallow"
+        },
+        {
+            "item": "fortnitefood:marshmallow"
+        },
+        {
+            "item": "fortnitefood:marshmallow"
+        },
+        {
+            "item": "fortnitefood:graham_cracker"
+        },
+        {
+            "item": "fortnitefood:graham_cracker"
+        },
+        {
+            "item": "fortnitefood:chocolate_bar"
+        },
+        {
+            "item": "fortnitefood:chocolate_bar"
+        },
+        {
+            "item": "minecraft:diamond"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "id": "fortnitefood:raw_smore"
+    }
+}
