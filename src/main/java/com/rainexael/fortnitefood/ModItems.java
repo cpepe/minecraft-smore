@@ -48,6 +48,11 @@ public class ModItems {
 
                         .build();
 
+        public static final Consumable CHOCOLATE_BAR_CONSUMABLE_COMPONENT = Consumables.defaultFood()
+                        .onConsume(new ApplyStatusEffectsConsumeEffect(
+                                        new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1.0f))
+                        .build();
+
         public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new,
                         new Item.Properties());
         public static final Item FLOPPER = register("flopper", Item::new,
@@ -61,7 +66,8 @@ public class ModItems {
         public static final Item BANANAOFTHEGODS = register("banana_of_the_gods", Item::new,
                         new Item.Properties().food(BANANA_FOOD_COMPONENT, BANANA_CONSUMABLE_COMPONENT));
         public static final Item CHOCOLATE_BAR = register("chocolate_bar", Item::new, new Item.Properties()
-                        .food(new FoodProperties.Builder().nutrition(6).saturationModifier(0.3f).build()));
+                        .food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build(),
+                                        CHOCOLATE_BAR_CONSUMABLE_COMPONENT));
 
         public static Item register(String name, Function<Item.Properties, Item> itemFactory,
                         Item.Properties settings) {
