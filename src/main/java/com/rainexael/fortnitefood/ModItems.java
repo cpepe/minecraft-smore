@@ -14,6 +14,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.trading.ItemCost;
+import net.minecraft.world.item.trading.MerchantOffer;
 
 import java.util.function.Function;
 
@@ -82,8 +88,7 @@ public class ModItems {
                                         REGEN_2_CONSUMABLE_COMPONENT));
         public static final Item RAW_SMORE = register("raw_smore", Item::new, new Item.Properties());
         public static final Item COOKED_SMORE = register("cooked_smore", Item::new, new Item.Properties()
-                        .food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.8f).build(),
-                                        COOKED_SMORE_CONSUMABLE_COMPONENT));
+                        .food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.8f).build()));
 
         public static Item register(String name, Function<Item.Properties, Item> itemFactory,
                         Item.Properties settings) {
@@ -127,5 +132,12 @@ public class ModItems {
                                 .register((itemGroup) -> itemGroup.accept(ModItems.RAW_SMORE));
                 ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
                                 .register((itemGroup) -> itemGroup.accept(ModItems.COOKED_SMORE));
+
+                TradeOfferHelper.registerVillagerOffers(VillagerProfession.CLERIC, 1, factories -> {
+                        factories.add((entity, random) -> new MerchantOffer(
+                                        new ItemCost(Items.EMERALD, 1),
+                                        new ItemStack(ModItems.CINNAMON, 1),
+                                        10, 2, 0.05f));
+                });
         }
 }
