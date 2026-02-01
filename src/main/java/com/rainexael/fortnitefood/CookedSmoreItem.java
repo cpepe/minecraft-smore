@@ -16,7 +16,7 @@ public class CookedSmoreItem extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
         // If the entity is a player, check for the effect first
-        if (livingEntity instanceof Player && !level.isClientSide) {
+        if (livingEntity instanceof Player && !level.isClientSide()) {
             // Check if the player already has the Health Boost effect
             if (livingEntity.hasEffect(MobEffects.HEALTH_BOOST)) {
                 // If they have it, do nothing (consume the item but don't apply effect or maybe

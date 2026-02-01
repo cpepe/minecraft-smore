@@ -20,6 +20,7 @@ public class Fortnitefood implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
-        ModItems.initialize();
+		ModItems.initialize();
+		ModVillagerTrades.registerTrades();
 	}
 }

@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:cocoa_beans"
+    ],
+    "result": {
+        "id": "fortnitefood:chocolate_bar",
+        "count": 2
+    }
+}
