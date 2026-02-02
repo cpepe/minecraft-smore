@@ -80,9 +80,11 @@ public class ModItems {
         public static final Item MARSHMALLOW = register("marshmallow", Item::new, new Item.Properties()
                         .food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build(),
                                         REGEN_2_CONSUMABLE_COMPONENT));
-        public static final Item RAW_SMORE = register("raw_smore", Item::new, new Item.Properties());
+        public static final Item RAW_SMORE = register("raw_smore", Item::new, new Item.Properties()
+                        .food(new FoodProperties.Builder().nutrition(4).saturationModifier(0.3f).build()));
         public static final Item COOKED_SMORE = register("cooked_smore", Item::new, new Item.Properties()
-                        .food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.8f).build()));
+                        .food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.8f).build(),
+                                        COOKED_SMORE_CONSUMABLE_COMPONENT));
 
         public static Item register(String name, Function<Item.Properties, Item> itemFactory,
                         Item.Properties settings) {
