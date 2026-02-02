@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "fortnitefood",
+	"id": "smores",
 	"version": "${version}",
-	"name": "Fortnite Food",
-	"description": "Eat the food from Fortnite inside Minecraft.",
+	"name": "Smores",
+	"description": "Eat the ingredients or make a smore for more health.",
 	"authors": [
-		"RaineXael"
+		"brickersnapper"
 	],
 	"contact": {
-		"homepage": "https://www.rainexael.xyz/",
-		"sources": "https://github.com/RaineXael/minecraftfortnitefood"
+		"homepage": "localhost",
+		"sources": "https://github.com/brickersnapper/minecraftsmores"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/fortnitefood/icon.png",
+	"icon": "assets/smores/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.rainexael.fortnitefood.Fortnitefood"
+			"com.brickersnapper.smores.Smores"
 		],
 		"client": [
-			"com.rainexael.fortnitefood.FortnitefoodClient"
+			"com.brickersnapper.smores.SmoresClient"
 		]
 	},
 	"mixins": [
-		"fortnitefood.mixins.json",
+		"smores.mixins.json",
 		{
-			"config": "fortnitefood.client.mixins.json",
+			"config": "smores.client.mixins.json",
 			"environment": "client"
 		}
 	],

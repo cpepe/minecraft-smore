@@ -1,4 +1,8 @@
-## Recipe API
-* https://wiki.fabricmc.net/tutorial:recipe_types_introduction
-* https://wiki.fabricmc.net/tutorial:recipe_type
-* https://github.com/natanfudge/fabric-docs/blob/master/newdocs/Modding-Tutorials/Crafting-Recipes/defining-custom-crafting-recipes.md
+## Villager Trading API
+* https://maven.fabricmc.net/docs/fabric-api-0.128.2+1.21.5/net/fabricmc/fabric/api/object/builder/v1/trade/TradeOfferHelper.html
+
+Obfuscated class names:
+class_3218 = ServerLevel
+class_1297 = Entity
+class_5819 = RandomSource
+class_1914 = MerchantOffer

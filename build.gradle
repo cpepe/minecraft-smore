@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"fortnitefood" {
+		"smores" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
