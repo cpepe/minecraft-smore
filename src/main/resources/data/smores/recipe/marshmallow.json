@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:dried_kelp",
+        "minecraft:dried_kelp",
+        "minecraft:dried_kelp",
+        "minecraft:dried_kelp"
+    ],
+    "result": {
+        "id": "smores:marshmallow",
+        "count": 4
+    }
+}

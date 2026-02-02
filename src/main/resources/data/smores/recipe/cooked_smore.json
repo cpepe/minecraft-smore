@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "cookingtime": 60,
+    "experience": 0.35,
+    "ingredients": [
+        "smores:raw_smore"
+    ],
+    "result": {
+        "id": "smores:cooked_smore",
+        "count": 1
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "minecraft:wheat",
+        "minecraft:wheat",
+        "minecraft:wheat",
+        "minecraft:wheat",
+        "minecraft:sand",
+        "minecraft:sand",
+        "minecraft:sand",
+        "minecraft:sand",
+        "smores:cinnamon"
+    ],
+    "result": {
+        "id": "smores:graham_cracker",
+        "count": 2
+    }
+}

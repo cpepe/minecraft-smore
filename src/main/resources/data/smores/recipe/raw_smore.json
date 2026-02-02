@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "smores:marshmallow",
+        "smores:marshmallow",
+        "smores:marshmallow",
+        "smores:marshmallow",
+        "smores:graham_cracker",
+        "smores:graham_cracker",
+        "smores:chocolate_bar",
+        "smores:chocolate_bar",
+        "minecraft:diamond"
+    ],
+    "result": {
+        "id": "smores:raw_smore",
+        "count": 1
+    }
+}
