@@ -2,33 +2,15 @@
     "type": "minecraft:crafting_shapeless",
     "category": "misc",
     "ingredients": [
-        {
-            "item": "fortnitefood:marshmallow"
-        },
-        {
-            "item": "fortnitefood:marshmallow"
-        },
-        {
-            "item": "fortnitefood:marshmallow"
-        },
-        {
-            "item": "fortnitefood:marshmallow"
-        },
-        {
-            "item": "fortnitefood:graham_cracker"
-        },
-        {
-            "item": "fortnitefood:graham_cracker"
-        },
-        {
-            "item": "fortnitefood:chocolate_bar"
-        },
-        {
-            "item": "fortnitefood:chocolate_bar"
-        },
-        {
-            "item": "minecraft:diamond"
-        }
+        "fortnitefood:marshmallow",
+        "fortnitefood:marshmallow",
+        "fortnitefood:marshmallow",
+        "fortnitefood:marshmallow",
+        "fortnitefood:graham_cracker",
+        "fortnitefood:graham_cracker",
+        "fortnitefood:chocolate_bar",
+        "fortnitefood:chocolate_bar",
+        "minecraft:diamond"
     ],
     "result": {
         "count": 1,

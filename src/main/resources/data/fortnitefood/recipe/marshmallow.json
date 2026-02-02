@@ -2,33 +2,14 @@
     "type": "minecraft:crafting_shapeless",
     "category": "misc",
     "ingredients": [
-        {
-            "item": "minecraft:sugar"
-        },
-        {
-            "item": "minecraft:sugar"
-        },
-        {
-            "item": "minecraft:sugar"
-        },
-        {
-            "item": "minecraft:sugar"
-        },
-        {
-            "item": "minecraft:sugar"
-        },
-        {
-            "item": "minecraft:dried_kelp"
-        },
-        {
-            "item": "minecraft:dried_kelp"
-        },
-        {
-            "item": "minecraft:dried_kelp"
-        },
-        {
-            "item": "minecraft:dried_kelp"
-        }
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:sugar",
+        "minecraft:dried_kelp",
+        "minecraft:dried_kelp",
+        "minecraft:dried_kelp",
+        "minecraft:dried_kelp"
     ],
     "result": {
         "count": 4,

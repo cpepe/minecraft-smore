@@ -2,10 +2,11 @@
     "type": "minecraft:campfire_cooking",
     "cookingtime": 60,
     "experience": 0.35,
-    "ingredient": {
-        "item": "fortnitefood:raw_smore"
-    },
+    "ingredients": [
+        "fortnitefood:raw_smore"
+    ],
     "result": {
-        "id": "fortnitefood:cooked_smore"
+        "id": "fortnitefood:cooked_smore",
+        "count": 1
     }
 }
