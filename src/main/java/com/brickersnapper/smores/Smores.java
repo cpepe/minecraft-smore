@@ -21,5 +21,6 @@ public class Smores implements ModInitializer {
 
 		LOGGER.info("Loading Minecraft Smores Mod");
 		ModItems.initialize();
+		ModVillagerTrades.registerTrades();
 	}
 }
