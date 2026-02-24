@@ -1,0 +1,20 @@
+{
+    "levels": {
+        "1": [
+            {
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "count": 1
+                },
+                "sell": {
+                    "id": "smores:cinnamon",
+                    "count": 1
+                },
+                "max_uses": 10,
+                "reward_exp": true,
+                "xp": 2,
+                "price_multiplier": 0.05
+            }
+        ]
+    }
+}
