@@ -1,4 +1,6 @@
 # PRD: Minecraft Smore Mod
+## 0. Background
+Not an easy dev chain to learn. This mod was built off of https://github.com/RaineXael/minecraftfortnitefood.git.
 
 ## 1. Introduction
 *   **Mod Name:** Minecraft Smore

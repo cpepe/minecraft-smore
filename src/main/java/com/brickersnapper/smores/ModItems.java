@@ -19,35 +19,6 @@ import java.util.function.Function;
 
 public class ModItems {
 
-        public static final FoodProperties BANANA_FOOD_COMPONENT = new FoodProperties.Builder()
-                        .alwaysEdible()
-                        .build();
-
-        public static final Consumable BANANA_CONSUMABLE_COMPONENT = Consumables.defaultFood()
-                        // The duration is in ticks, 20 ticks = 1 second
-                        .onConsume(new ApplyStatusEffectsConsumeEffect(
-                                        new MobEffectInstance(MobEffects.REGENERATION, 25 * 20, 1), 1.0f))
-                        .onConsume(new ApplyStatusEffectsConsumeEffect(
-                                        new MobEffectInstance(MobEffects.INSTANT_HEALTH, 1, 1), 1.0f))
-                        .onConsume(new ApplyStatusEffectsConsumeEffect(
-                                        new MobEffectInstance(MobEffects.SPEED, 25 * 20, 1), 1.0f))
-                        .onConsume(new ApplyStatusEffectsConsumeEffect(
-                                        new MobEffectInstance(MobEffects.JUMP_BOOST, 25 * 20, 2), 1.0f))
-                        .build();
-
-        public static final Consumable MED_HEAL_CONSUMABLE_COMPONENT = Consumables.defaultFood()
-                        // The duration is in ticks, 20 ticks = 1 second
-                        .onConsume(new ApplyStatusEffectsConsumeEffect(
-                                        new MobEffectInstance(MobEffects.REGENERATION, 20, 4), 1.0f))
-
-                        .build();
-        public static final Consumable SMALL_HEAL_CONSUMABLE_COMPONENT = Consumables.defaultFood()
-                        // The duration is in ticks, 20 ticks = 1 second
-                        .onConsume(new ApplyStatusEffectsConsumeEffect(
-                                        new MobEffectInstance(MobEffects.REGENERATION, 20, 3), 1.0f))
-
-                        .build();
-
         public static final Consumable REGEN_2_CONSUMABLE_COMPONENT = Consumables.defaultFood()
                         .onConsume(new ApplyStatusEffectsConsumeEffect(
                                         new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1.0f))
@@ -58,18 +29,6 @@ public class ModItems {
                                         new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000000, 7), 1.0f))
                         .build();
 
-        public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new,
-                        new Item.Properties());
-        public static final Item FLOPPER = register("flopper", Item::new,
-                        new Item.Properties().food(new FoodProperties.Builder().nutrition(6).build()));
-        public static final Item SMALLFRY = register("small_fry", Item::new,
-                        new Item.Properties().food(new FoodProperties.Builder().nutrition(3).build()));
-        public static final Item SLURPFISH = register("slurp_fish", Item::new, new Item.Properties());
-
-        public static final Item SLAPBERRY = register("slap_berry", Item::new, new Item.Properties());
-        public static final Item SLAPJUICE = register("slap_juice", Item::new, new Item.Properties());
-        public static final Item BANANAOFTHEGODS = register("banana_of_the_gods", Item::new,
-                        new Item.Properties().food(BANANA_FOOD_COMPONENT, BANANA_CONSUMABLE_COMPONENT));
         public static final Item CHOCOLATE_BAR = register("chocolate_bar", Item::new, new Item.Properties()
                         .food(new FoodProperties.Builder().nutrition(2).saturationModifier(0.3f).build(),
                                         REGEN_2_CONSUMABLE_COMPONENT));
@@ -101,20 +60,6 @@ public class ModItems {
         }
 
         public static void initialize() {
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.SUSPICIOUS_SUBSTANCE));
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.FLOPPER));
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.SMALLFRY));
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.SLURPFISH));
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.SLAPBERRY));
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.SLAPJUICE));
-                ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
-                                .register((itemGroup) -> itemGroup.accept(ModItems.BANANAOFTHEGODS));
                 ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
                                 .register((itemGroup) -> itemGroup.accept(ModItems.CHOCOLATE_BAR));
                 ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINKS)
